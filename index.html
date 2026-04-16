@@ -60,12 +60,14 @@
 
     /* SECTION IMAGES - inside sections, not breaks */
     .section-img {
-      width: 100vw;
-      margin-left: calc(-50vw + 50%);
-      height: 70vh;
+      width: 100%;
+      max-width: 640px;
+      height: 380px;
       object-fit: cover;
       display: block;
       margin-top: 56px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     /* PROSE */
@@ -159,7 +161,7 @@
       .options-grid { grid-template-columns: 1fr; }
       .timeline-bar { flex-direction: column; gap: 32px; }
       .fee-box { padding: 36px 28px; }
-      .section-img { height: 50vh; }
+      .section-img { height: 220px; }
     }
   </style>
 </head>
