@@ -131,6 +131,10 @@
     .card-line-gold { background: var(--gold); }
     .option-card p { font-size: 15px; color: var(--text-grey); }
     .option-card-dark p { color: var(--text-light); }
+    .attire-image-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px; margin-top: 40px; }
+    .attire-image-card { border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.02); overflow: hidden; }
+    .attire-image-card img { width: 100%; height: 420px; object-fit: cover; display: block; }
+    .attire-image-card figcaption { font-family: 'Sen', sans-serif; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); padding: 18px 20px; }
 
     /* NOTE / BUDGET */
     .budget-note { margin-top: 40px; padding: 32px 0; border-top: 1px solid rgba(0,0,0,0.06); }
@@ -159,6 +163,8 @@
       .you-handle-list { grid-template-columns: 1fr; }
       .steps-grid { grid-template-columns: 1fr; gap: 40px; }
       .options-grid { grid-template-columns: 1fr; }
+      .attire-image-grid { grid-template-columns: 1fr; }
+      .attire-image-card img { height: 320px; }
       .timeline-bar { flex-direction: column; gap: 32px; }
       .fee-box { padding: 36px 28px; }
       .section-img { height: 220px; }
@@ -300,6 +306,17 @@
           <h3>Montsuki Haori Hakama</h3>
           <p>Black silk kimono with family crests, haori jacket, hakama trousers. The right choice next to a shiromuku at a shrine. No in-person fitting needed. We confirm Lucas's measurements eight weeks out and handle rental and delivery.</p>
         </div>
+      </div>
+
+      <div class="attire-image-grid fade-in">
+        <figure class="attire-image-card">
+          <img src="assets/shiromuku.png" alt="White shiromuku bridal kimono with wataboshi hood">
+          <figcaption>Emily's Shiromuku</figcaption>
+        </figure>
+        <figure class="attire-image-card">
+          <img src="assets/montsuki.png" alt="Black montsuki haori hakama with striped hakama trousers">
+          <figcaption>Lucas's Montsuki Haori Hakama</figcaption>
+        </figure>
       </div>
 
       <div class="note-box fade-in">
